@@ -25,8 +25,13 @@ public class StaticMethodInit {
      */
     private static int num2 = 2;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         //最终打印结果是2
         log.info(String.valueOf(StaticMethodInit.num2));
+        Object obj1 = new Object();
+        Object obj2 = new Object();
+        obj1.wait();
+        //手动进行垃圾回收
+        System.gc();
     }
 }

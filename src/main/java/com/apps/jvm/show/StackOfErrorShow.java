@@ -12,7 +12,8 @@ public class StackOfErrorShow {
      *
      * @param args 命令行参数.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        Thread.sleep(50000);
         main(args);
     }
 }
